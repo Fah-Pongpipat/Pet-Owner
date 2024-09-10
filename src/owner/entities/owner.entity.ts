@@ -13,9 +13,9 @@ export class Owner {
   @Field()
   name: string;
 
-  @Column()
-  @Field(() => Int)
-  age: number;
+  // @Column()
+  // @Field(() => Int)
+  // age: number;
 
   @OneToMany(() => Pet, (pet) => pet.owner)
   @Field(() => Pet)
